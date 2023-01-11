@@ -17,7 +17,7 @@
     exit();
   }
 
-  require "../blocks/connect.php";
+  // require "../blocks/connect.php";
   $to = "hovhannisyan2808@gmail.com";
   $subject = "=?utf-8?B?".base64_encode("Test Text")."?=";
   $headers =[

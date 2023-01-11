@@ -4,7 +4,7 @@
 
   $pass = md5($pass."SQL285");
 
-  $mysql = require "../blocks/connect.php";
+  $mysql = new mysqli('localhost', 'root', 'root', 'webpage-db');
   $result = $mysql->query("SELECT * FROM `users` WHERE `login` = '$login' AND `pass` = '$pass'");
   $user = $result->fetch_assoc();
   if(count($user) == 0){

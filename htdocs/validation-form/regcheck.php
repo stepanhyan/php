@@ -16,7 +16,7 @@
 
   $pass = md5($pass."SQL285");
 
-  require "../blocks/connect.php";
+  $mysql = new mysqli('localhost', 'root', 'root', 'webpage-db');
   $mysql ->query("INSERT INTO `users` (`login` , `pass`, `name`)
   VALUES('$login','$pass', '$name') ");
   $mysql->close();
