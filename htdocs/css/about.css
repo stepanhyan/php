@@ -1,0 +1,13 @@
+.form{
+  width: 50vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 8px;
+}
+.txtarea{
+  height: 300px;
+  resize: none;
+}
+

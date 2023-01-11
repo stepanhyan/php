@@ -1,0 +1,44 @@
+.evrcrd{
+  width: 100%;
+  min-height: 490px;
+  max-height: 800px;
+  min-width: 100px;
+}
+
+.zbt{
+  width: 100%;
+  height: fit-content;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: center;
+  align-items: center;
+  gap: 1%;
+}
+
+img, svg{
+  width: 100%;
+}
+
+
+
+
+@media (max-width: 990px){
+
+  #main{
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5mm;
+
+  }
+}
+@media (max-width: 502px){
+  #main{
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 222px){
+  body{
+    min-width: 240px;
+  }
+}
+
